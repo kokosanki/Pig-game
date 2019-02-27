@@ -30,6 +30,7 @@ function init() {
     document.querySelector('.player-2-label').innerText = 'Player 2';
     roll.classList.add('roll');
     hold.classList.add('hold');
+    dice.src = 'pig.png';
 //    dice.style.display = 'none';
 }
 
