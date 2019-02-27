@@ -23,6 +23,10 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   text-align: center;
 }
+.wrapper .buttons {
+  display: flex;
+  flex-direction: column;
+}
 .control-panel {
   display: flex;
   flex-direction: column;
@@ -86,6 +90,12 @@ footer div {
     flex-direction: column;
     align-items: center;
     font-size: 0.7em;
+  }
+  .wrapper .buttons {
+    flex-direction: row;
+  }
+  .wrapper .buttons button {
+    padding: 5px 10px;
   }
   .player-1,
   .player-2,
