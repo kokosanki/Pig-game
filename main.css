@@ -86,10 +86,12 @@ footer div {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    font-size: 0.85em;
   }
   .player-1,
   .player-2,
   .control-panel {
     width: 80%;
+    padding: 0;
   }
 }
