@@ -8,6 +8,7 @@ body {
     margin: 0;
     background-image: url('pink.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
@@ -35,11 +36,13 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    * {
+    .buttons {
+        * {
         margin: 3px;
         cursor: pointer;
         &:focus {
             outline: none;
+        }
         }
     }
 }
@@ -70,7 +73,8 @@ body {
 }
 
 .hide {
-    display: none;
+    visibility: hidden;
+    cursor: default!important;
 }
 
 button {

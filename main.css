@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-image: url('pink.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .wrapper {
   display: flex;
@@ -34,11 +35,11 @@ body {
   align-items: center;
   width: 40%;
 }
-.control-panel * {
+.control-panel .buttons * {
   margin: 3px;
   cursor: pointer;
 }
-.control-panel *:focus {
+.control-panel .buttons *:focus {
   outline: none;
 }
 .player-1,
@@ -58,7 +59,8 @@ body {
   border-radius: 5px;
 }
 .hide {
-  display: none;
+  visibility: hidden;
+  cursor: default!important;
 }
 button {
   font-size: 1.2em;

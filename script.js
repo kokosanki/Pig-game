@@ -7,9 +7,6 @@ dice = document.querySelector('.dice');
 hold = document.querySelector('.hold');
 roll = document.querySelector('.roll');
 initGame = document.querySelector('.initGame');
-//currentScores = [0, 0];
-//scores = [0, 0];
-//activePlayer1 = true;
 
 //start the game
 function init() {
@@ -28,10 +25,7 @@ function init() {
     hold.classList.remove('hide');
     document.querySelector('.player-1-label').innerText = 'Player 1';
     document.querySelector('.player-2-label').innerText = 'Player 2';
-    roll.classList.add('roll');
-    hold.classList.add('hold');
     dice.src = 'pig.png';
-//    dice.style.display = 'none';
 }
 
 init();
@@ -43,7 +37,6 @@ initGame.addEventListener('click', function() {
 // add points to the active player
 function rollDice() {
         currentRoll=(Math.floor(Math.random()*6 + 1));
-        //dice.innerText = currentRoll;
         //display results
         dice.style.display = 'block';
         dice.src = 'dice-' + currentRoll + '.png';
@@ -79,8 +72,8 @@ function changePlayer() {
         //estimating winner
         if(scores[0] >= 100) {
             document.querySelector('.player-1-label').innerText = 'WINNER'
-            // roll.classList.add('hide');
-            // hold.classList.add('hide');
+            roll.classList.add('hide');
+            hold.classList.add('hide');
             roll.classList.remove('roll');
             hold.classList.remove('hold');
             document.querySelector('.player-1').classList.add('active');
@@ -99,39 +92,17 @@ function changePlayer() {
         //estimating winner
         if (scores[1] >= 100) {
         document.querySelector('.player-2-label').innerText = 'WINNER'
-        // roll.classList.add('hide');
-        // hold.classList.add('hide');
+        roll.classList.add('hide');
+        hold.classList.add('hide');
         roll.classList.remove('roll');
         hold.classList.remove('hold');
         document.querySelector('.player-2').classList.add('active');
         document.querySelector('.player-1').classList.remove('active');
                 }
              }
-    }
-
-    //estimating winner function that doesn't work yet
-    // function estimateWinner() {
-    // if (scores[1] >= 10) {
-    //     console.log('works')
-    //     //document.querySelector('.player-2-label').innerText = 'WINNER'
-    //     } else if (scores[0] >= 10) {
-    //         console.log('this works')
-    //       //  document.querySelector('.player-1-label').innerText = 'WINNER'
-    //     }
-    // }
-    // hold.addEventListener("click", function() {
-    // estimateWinner();
-    // })
-    
+    }    
 
 
 hold.addEventListener('click', function( )
 {changePlayer()
 });
-
-// //estimate winner
-// if(scores[0] >= 100) {
-//     document.querySelector('.player-1-label').innerText = 'WINNER'
-// } else if (scores[1] >= 100) {
-//     document.querySelector('.player-2-label').innerText = 'WINNER'
-// };
