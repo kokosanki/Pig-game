@@ -85,6 +85,10 @@ footer div {
   font-size: 10px;
 }
 @media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+    min-height: 100vh;
+  }
   .wrapper {
     width: 100%;
     height: auto;
@@ -102,6 +106,8 @@ footer div {
   .player-1,
   .player-2,
   .control-panel {
+    margin-top: 3px;
+    margin-bottom: 7px;
     width: 80%;
     padding: 0;
   }
