@@ -1,5 +1,5 @@
 #Pig-game
-"Pig-game" is a game that I wrote to practise Javascript.
+"Pig-game" is a simple game that I wrote to practise Javascript.
 
 ##Technologies:
 * HTML
