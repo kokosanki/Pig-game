@@ -1,4 +1,4 @@
-# Pig-game
+# Pig-game - https://kokosanki.github.io/Pig-game/
 "Pig-game" is a simple game that I wrote to practise Javascript.
 
 ## Technologies:
